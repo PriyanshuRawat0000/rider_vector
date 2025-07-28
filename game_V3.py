@@ -782,7 +782,7 @@ class InclusiveVelocity:
         
       
         title = self.font.render("Gesture Calibration & Testing", True, self.WHITE)
-        self.screen.blit(title, (250, 20))
+        self.screen.blit(title, (225, 20))
         
         instructions = [
             "• Make a FIST to brake",
@@ -790,12 +790,14 @@ class InclusiveVelocity:
             "• TILT your hand left/right to steer",
             "• Ensure good lighting for best results",
             "",
+            "",
+            "",
             "Press ESC to return to menu"
         ]
         
         for i, instruction in enumerate(instructions):
             text = self.small_font.render(instruction, True, self.WHITE)
-            self.screen.blit(text, (650, 380 + i * 25))
+            self.screen.blit(text, (500, 380 + i * 25))
     
     def draw_settings(self):
         # Background
